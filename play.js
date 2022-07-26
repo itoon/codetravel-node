@@ -6,14 +6,24 @@ let classRoom = "CodeTreveler";
 // classRoom = classRoom + " " + "X DataRockie";
 classRoom = `${classRoom} X DataRockie`;
 
-console.log(name);
-console.log(age);
-console.log(`===========`);
+//function
+function joinClassRoom(name, classRoom) {
+  return "function: " + name + " join " + classRoom;
+}
 
-// weakly type language
-console.log(`classroom: ${classRoom}`);
-console.log(`typeof classroom: ${typeof classRoom}`);
+// ansynimous function
+const ansynimousJoinClassRoom = function (name, classRoom) {
+  return "ansynimous function: " + name + " join " + classRoom;
+};
 
-classRoom = 4;
-console.log(`classroom: ${classRoom}`);
-console.log(`typeof classroom: ${typeof classRoom}`);
+//arrow function
+const arrowJoinClassRoom = (name, classRoom) => {
+  // this
+  //console.log(this);
+  return "ansynimous function: " + name + " join " + classRoom;
+};
+
+console.log(joinClassRoom(name, classRoom));
+
+// play with ansynimous function
+console.log(ansynimousJoinClassRoom(name, classRoom));
