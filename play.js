@@ -27,3 +27,17 @@ console.log(joinClassRoom(name, classRoom));
 
 // play with ansynimous function
 console.log(ansynimousJoinClassRoom(name, classRoom));
+
+//play with arrow function
+console.log(arrowJoinClassRoom(name, classRoom));
+
+const add = (num1, num2) => {
+  return num1 + num2;
+};
+
+const minus = (num1, num2) => {
+  return num1 - num2;
+};
+
+console.log(add(7, 10));
+console.log(minus(7, 10));
