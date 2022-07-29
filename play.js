@@ -1,12 +1,11 @@
-const book = {
-  name: "Start With Why",
-  version: 1,
-  ISBN: "0241958229",
-  publication: new Date("2011-10-11"),
-  price: 389,
-};
+console.log("Start");
 
-const copyBook = { ...book };
-copyBook.name = "ABC";
-console.log(copyBook);
-console.log(book);
+setTimeout(() => {
+  console.log("Timer 3 sec Done!!");
+}, 2000);
+
+setTimeout(() => {
+  console.log("Timer 0 sec Done!!");
+}, 0);
+
+console.log("Stop");
